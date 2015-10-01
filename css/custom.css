@@ -1,0 +1,315 @@
+/* Header Nav
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+header h1 {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+header nav {
+  background-color: #51BCE9;
+}
+
+header nav ul {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  overflow: hidden;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  float: left;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1em;
+}
+
+header nav ul li.selected {
+  border-bottom: none;
+  padding: 5px 0;
+  background-color: #308952;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header img {
+  display: inline;
+  float: left;
+  padding:5px 25px 0 5px;
+  max-width: 150px;
+}
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button {
+  border-radius: 100px;
+}
+
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero-heading{
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.hero-text {
+  color: #000;
+}
+
+.phones {
+  position: relative;
+}
+
+.phone {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -12rem;
+}
+
+.phone + .phone {
+  display: none;
+}
+/* Values
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.values {
+  background-image: url("../images/man-desk.jpg");
+  background-size: cover;
+  padding-bottom: 5rem;
+}
+/* About
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.about {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+}
+.about-header{
+  text-align: center;
+  margin: auto; 
+  color: #51BCE9;
+  font-size: 2em;
+}
+
+img.about {
+  max-width: 150px;
+}
+
+.about-heading {
+  margin-bottom: .5rem;
+  color: #000;
+}
+
+.about-description {
+  opacity: .8;
+  font-weight: 300;
+}
+/* Pricing 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.pricing-box {
+  background-color: #fff;
+}
+
+.pricing {
+  background-color: #D0DF5A;
+  text-align: center;
+}
+
+.pricing-heading {
+  background-color: #51BCE9;
+  color: #fff;
+}
+
+.pricing-value {
+  color: #000;
+}
+
+ul.pricing-info {
+  list-style-type: none;
+  color: #000;
+}
+
+.pricing-button {
+  font-size: 1em;
+}
+/* Testimonials
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonials h2 {
+  color: #009be8;
+  font-weight: 300;
+}
+
+.testimonials p {
+  color: #9d9d9d;
+  font-size: 1.2em;
+}
+
+.testimonials blockquote {
+  border: none;
+  text-align: left;
+  padding: 0 1.5em 0 0;
+  font-size: 1em;
+  color: #4d4d4d;
+  line-height: 1.4;
+  margin: 1em 0;
+}
+
+.testimonials .avatar img {
+  border-radius: 50%;
+  float: left;
+  display: inline;
+  margin-right: 1em;
+  width: 65px;
+  height: 65px;
+}
+
+.testimonials .avatar p {
+  text-align: left;
+  padding-top: 1em;
+  color: #5d5d5d;
+  font-weight: 900;
+}
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+footer {
+  background: #51BCE9;
+  color: #fff;
+  text-align: center;
+}
+
+footer nav ul {
+  margin-top: 0.5em;
+}
+
+footer nav ul li {
+  display: block;
+  margin: 0;
+}
+
+footer nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 1em 0 0;
+  font-size: 1em;
+}
+
+footer p {
+  color: #fff;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+
+footer h5 {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+footer img {
+  margin-top: 0.5em;
+  max-width: 150px;
+}
+
+
+/* Bigger than 550 */
+
+@media (min-width: 550px) {
+  .section {
+    padding: 12rem 0 11rem;
+  }
+  .hero {
+    padding-bottom: 12rem;
+    text-align: left;
+    height: 165px;
+  }
+  .phone {
+    position: absolute;
+    top: -7rem;
+    right: 3rem;
+    max-height: 362px;
+    z-index: 3;
+  }
+  .phone + .phone {
+    top: -6rem;
+    display: block;
+    max-width: 73.8%;
+    right: 0;
+    z-index: 2;
+    max-height: 338px;
+  }
+  .hero-heading {
+    font-size: 2.4rem;
+  }
+}
+/* Bigger than 750 */
+
+@media (min-width: 750px) {
+  .hero {
+    /*height: 190px;*/
+  }
+  .hero-heading {
+    font-size: 2.6rem;
+  }
+  .section {
+    padding: 14rem 0 15rem;
+  }
+  .hero {
+    padding: 16rem 0 14rem;
+  }
+  .section-description {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .phone {
+    top: -14rem;
+    right: 5rem;
+    max-height: 510px;
+  }
+  .phone + .phone {
+    top: -12rem;
+    max-height: 472px;
+  }
+  .categories {
+    padding: 15rem 0 8rem;
+  }
+}
+/* Bigger than 1000 */
+
+@media (min-width: 1000px) {
+  .section {
+    padding: 20rem 0 19rem;
+  }
+  .hero {
+    padding: 22rem 0;
+  }
+  .hero-heading {
+    font-size: 4.0rem;
+  }
+  .phone {
+    top: -16rem;
+    max-height: 615px;
+  }
+  .phone + .phone {
+    top: -14rem;
+    max-height: 570px;
+  }
+}
